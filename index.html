@@ -1,0 +1,128 @@
+# Frontend-Practice
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dbeafe, #fce7f3);
+            text-align: center;
+            padding: 50px;
+            transition: 0.3s;
+        }
+
+        .card {
+            background: white;
+            padding: 35px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            color: #7c3aed;
+            font-size: 32px;
+        }
+
+        h2 {
+            color: #db2777;
+        }
+
+        p {
+            color: #444;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        button {
+            background: #7c3aed;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #db2777;
+            transform: scale(1.05);
+        }
+
+        .dark {
+            background: #222;
+            color: white;
+        }
+
+        .dark .card {
+            background: #333;
+        }
+
+        .dark p {
+            color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>Hello! Welcome to My Website</h1>
+
+        <h2>Vaishnavi Anil Shendage</h2>
+
+        <p>
+            I am a final-year B.Tech Information Technology student.
+            I am interested in learning new technologies,
+            programming and web development.
+        </p>
+
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+
+        <button onclick="toggleText()">
+            Show / Hide Introduction
+        </button>
+
+        <button onclick="darkMode()">
+            Dark / Light Mode
+        </button>
+
+        <h3 id="message"></h3>
+
+        <p id="extra">
+            My goal is to become a successful software developer
+            and improve my technical skills.
+        </p>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "Thank you for visiting my website! ❤️";
+        }
+
+        function toggleText() {
+            let text = document.getElementById("extra");
+
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+
+        function darkMode() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+
+</body>
+</html>
