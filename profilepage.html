@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Interactive Profile</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #dbeafe, #fce7f3);
+            text-align: center;
+            padding: 50px;
+        }
+
+        .profile-card {
+            background-color: white;
+            max-width: 450px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #7c3aed;
+        }
+
+        h2 {
+            color: #db2777;
+        }
+
+        p {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .skills {
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #7c3aed;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #db2777;
+        }
+
+        #message {
+            color: green;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <h1>My Profile</h1>
+
+        <h2>Vaishnavi Anil Shendage</h2>
+
+        <p>
+            Hello! I am a final-year B.Tech Information
+            Technology student. I am passionate about
+            learning new technologies and developing
+            my programming skills.
+        </p>
+
+        <h3>My Skills</h3>
+
+        <p class="skills">
+            HTML | CSS | JavaScript | Java | SQL
+        </p>
+
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "Thank you for visiting my profile! 😊";
+        }
+    </script>
+
+</body>
+</html>
 
